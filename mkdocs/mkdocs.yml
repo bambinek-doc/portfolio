@@ -1,0 +1,40 @@
+site_name: Belvo Developer Portal
+theme:
+  name: material
+nav:
+  - Welcome: index.md
+  - Getting Started: 
+    - Get API Keys: api-keys.md
+    - First Calls: postman.md
+  - Build: 
+    - Overview: build/build-intro.md
+    - Sandbox Environment: build/sandbox.md
+    - Banking App: build/build-banking.md
+    - Fiscal App: build/build-fiscal.md
+    - Gig App: build/build-gig.md
+  - Extend:
+    - Intro: extend/extend-intro.md
+    - Widgets:
+      - Overview: extend/widgets/widgets-overview.md
+    - Webhooks:
+      - Overview: extend/webhooks/webhooks-intro.md
+  - Resources:
+    - API Reference: https://docs.belvo.com
+    - SDKs: resources/resources-sdks.md
+
+
+markdown_extensions:
+    - admonition
+    - pymdownx.details
+    - pymdownx.superfences
+    - pymdownx.tabbed
+    - pymdownx.superfences
+    - pymdownx.highlight
+    - attr_list
+    - pymdownx.emoji:
+        emoji_index: !!python/name:materialx.emoji.twemoji
+        emoji_generator: !!python/name:materialx.emoji.to_svg
+  # - abbr
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js
+  - javascripts/tables.js

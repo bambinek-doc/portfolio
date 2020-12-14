@@ -1,0 +1,1129 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.7">
+    
+    
+      
+        <title>Sandbox Environment - Belvo Developer Portal</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.19753c6b.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.196e0c26.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+      
+  
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#sandbox-environment" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="../.." title="Belvo Developer Portal" class="md-header-nav__button md-logo" aria-label="Belvo Developer Portal">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            Belvo Developer Portal
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              Sandbox Environment
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Belvo Developer Portal" class="md-nav__button md-logo" aria-label="Belvo Developer Portal">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Belvo Developer Portal
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." class="md-nav__link">
+      Welcome
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" >
+    <label class="md-nav__link" for="nav-2">
+      Getting Started
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Getting Started" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        <span class="md-nav__icon md-icon"></span>
+        Getting Started
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../api-keys.md" class="md-nav__link">
+      Get API Keys
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../postman.md" class="md-nav__link">
+      First Calls
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+    <label class="md-nav__link" for="nav-3">
+      Build
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Build" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        <span class="md-nav__icon md-icon"></span>
+        Build
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../build-intro/" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Sandbox Environment
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="./" class="md-nav__link md-nav__link--active">
+      Sandbox Environment
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#accessing-the-sandbox" class="md-nav__link">
+    Accessing the sandbox
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#demo-datasets" class="md-nav__link">
+    Demo Datasets
+  </a>
+  
+    <nav class="md-nav" aria-label="Demo Datasets">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#banking" class="md-nav__link">
+    Banking
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fiscal" class="md-nav__link">
+    Fiscal
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gig-economy" class="md-nav__link">
+    Gig Economy
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#standard-flows" class="md-nav__link">
+    Standard Flows
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#advanced-link-flows" class="md-nav__link">
+    Advanced Link Flows
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#two-factor-authentication" class="md-nav__link">
+    Two-Factor Authentication
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../build-banking/" class="md-nav__link">
+      Banking App
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../build-fiscal/" class="md-nav__link">
+      Fiscal App
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../build-gig/" class="md-nav__link">
+      Gig App
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" >
+    <label class="md-nav__link" for="nav-4">
+      Extend
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Extend" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        <span class="md-nav__icon md-icon"></span>
+        Extend
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../extend/extend-intro/" class="md-nav__link">
+      Intro
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-2" type="checkbox" id="nav-4-2" >
+    <label class="md-nav__link" for="nav-4-2">
+      Widgets
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Widgets" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-2">
+        <span class="md-nav__icon md-icon"></span>
+        Widgets
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../extend/widgets/widgets-overview/" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-3" type="checkbox" id="nav-4-3" >
+    <label class="md-nav__link" for="nav-4-3">
+      Webhooks
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Webhooks" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-3">
+        <span class="md-nav__icon md-icon"></span>
+        Webhooks
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../extend/webhooks/webhooks-intro/" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" >
+    <label class="md-nav__link" for="nav-5">
+      Resources
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Resources" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        <span class="md-nav__icon md-icon"></span>
+        Resources
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="https://docs.belvo.com" class="md-nav__link">
+      API Reference
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../resources/resources-sdks.md" class="md-nav__link">
+      SDKs
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#accessing-the-sandbox" class="md-nav__link">
+    Accessing the sandbox
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#demo-datasets" class="md-nav__link">
+    Demo Datasets
+  </a>
+  
+    <nav class="md-nav" aria-label="Demo Datasets">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#banking" class="md-nav__link">
+    Banking
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fiscal" class="md-nav__link">
+    Fiscal
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gig-economy" class="md-nav__link">
+    Gig Economy
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#standard-flows" class="md-nav__link">
+    Standard Flows
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#advanced-link-flows" class="md-nav__link">
+    Advanced Link Flows
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#two-factor-authentication" class="md-nav__link">
+    Two-Factor Authentication
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="sandbox-environment">Sandbox Environment</h1>
+<h2 id="overview">Overview</h2>
+<p>With Belvo's sandbox environment, you can interact with dummy data to prototype your banking, fiscal, or gig apps and connect them to widgets or webhooks. In this article we'll provide you reference documentation on what resources are available and in which use cases you can apply them. To see them used in practice, check out our simple <a href="">banking</a>, <a href="">fiscal</a>, and <a href="">gig</a> app guides. </p>
+<h2 id="accessing-the-sandbox">Accessing the sandbox</h2>
+<p>To access the sandbox, just make sure to <a href="">generate your sandbox API keys</a>. </p>
+<details class="example"><summary>Test your credentials</summary><p>To make sure that everything is working as expected, try out the following API call in the sandbox environment. If you've used the right keys, you'll see a list of institutions in the response. </p>
+<div class="tabbed-set" data-tabs="1:4"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">cURL</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code>curl https://sandbox.belvo.co/api/institutions/  \
+-u [<span class="p">&lt;</span><span class="nt">Secret</span> <span class="na">Key</span> <span class="na">ID</span><span class="p">&gt;</span>]:[<span class="p">&lt;</span><span class="nt">Secret</span> <span class="na">Key</span> <span class="na">PASSWORD</span><span class="p">&gt;</span>]
+</code></pre></div>
+</div>
+<input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">Node</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code><span class="c1">// Check out our node.js SDK on github:</span>
+<span class="c1">// https://github.com/belvo-finance/belvo-js</span>
+
+<span class="kd">var</span> <span class="nx">belvo</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;belvo&#39;</span><span class="p">).</span><span class="k">default</span><span class="p">;</span>
+
+<span class="kd">var</span> <span class="nx">client</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">belvo</span><span class="p">(</span>
+<span class="s1">&#39;Secret Key ID&#39;</span><span class="p">,</span>
+<span class="s1">&#39;Secret Key PASSWORD&#39;</span><span class="p">,</span>
+<span class="s1">&#39;https://sandbox.belvo.co&#39;</span>
+<span class="p">);</span>
+
+<span class="nx">client</span><span class="p">.</span><span class="nx">connect</span><span class="p">()</span>
+<span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+    <span class="nx">client</span><span class="p">.</span><span class="nx">institutions</span><span class="p">.</span><span class="nx">list</span><span class="p">()</span>
+    <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">res</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">res</span><span class="p">);</span>
+    <span class="p">})</span>
+    <span class="p">.</span><span class="k">catch</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">error</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">error</span><span class="p">);</span>
+    <span class="p">});</span>
+<span class="p">});</span>
+</code></pre></div>
+</div>
+<input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><label for="__tabbed_1_3">Python</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code><span class="c1"># Check out our python SDK on github:</span>
+<span class="c1"># https://github.com/belvo-finance/belvo-python</span>
+<span class="kn">from</span> <span class="nn">pprint</span> <span class="kn">import</span> <span class="n">pprint</span>
+<span class="kn">from</span> <span class="nn">belvo.client</span> <span class="kn">import</span> <span class="n">Client</span>
+
+<span class="c1"># Login to Belvo API</span>
+<span class="n">client</span> <span class="o">=</span> <span class="n">Client</span><span class="p">(</span><span class="s2">&quot;Secret Key ID&quot;</span><span class="p">,</span> <span class="s2">&quot;Secret Key PASSWORD&quot;</span><span class="p">,</span> <span class="s2">&quot;https://sandbox.belvo.co&quot;</span><span class="p">)</span>
+
+<span class="c1"># List institutions</span>
+<span class="k">for</span> <span class="n">institution</span> <span class="ow">in</span> <span class="n">client</span><span class="o">.</span><span class="n">Institutions</span><span class="o">.</span><span class="n">list</span><span class="p">():</span>
+    <span class="n">pprint</span><span class="p">(</span><span class="n">institution</span><span class="p">)</span>
+</code></pre></div>
+</div>
+<input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><label for="__tabbed_1_4">Ruby</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code><span class="c1"># Check out our Ruby SDK on github:</span>
+<span class="c1"># https://github.com/belvo-finance/belvo-ruby</span>
+<span class="nb">require</span> <span class="s1">&#39;belvo&#39;</span>
+
+<span class="n">sandbox</span> <span class="o">=</span> <span class="no">Belvo</span><span class="o">::</span><span class="no">Client</span><span class="o">.</span><span class="n">new</span><span class="p">(</span>
+<span class="s1">&#39;Secret Key ID&#39;</span><span class="p">,</span>
+<span class="s1">&#39;Secret Key PASSWORD&#39;</span><span class="p">,</span>
+<span class="s1">&#39;https://sandbox.belvo.co&#39;</span>
+<span class="p">)</span>
+
+<span class="n">sandbox</span><span class="o">.</span><span class="n">institutions</span><span class="o">.</span><span class="n">list</span>
+</code></pre></div>
+</div>
+</div>
+<p>Working as expected?</p>
+<p><a class="md-button" href="#">Yep! 👍</a> <a class="md-button" href="#">I'm having issues 😔</a></p>
+</details>
+<h2 id="demo-datasets">Demo Datasets</h2>
+<p>To help you simulate real-world interactions you can use our mock data sets for banking, fiscal, and gig-economy use cases.</p>
+<h3 id="banking">Banking</h3>
+<p>For banking use cases, you have access to the following retail institutions:</p>
+<div class="tabbed-set" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">Erebor Bank</label><div class="tabbed-content">
+<ul>
+<li><code>erebor_mx_retail</code></li>
+<li><code>erebor_co_retail</code></li>
+<li><code>erebor_br_retail</code></li>
+</ul>
+</div>
+<input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><label for="__tabbed_2_2">Gringotts Bank</label><div class="tabbed-content">
+<ul>
+<li><code>gringotts_mx_retail</code></li>
+<li><code>gringotts_co_retail</code></li>
+<li><code>gringotts_br_retail</code></li>
+</ul>
+</div>
+</div>
+<p>You can simulate different types of users by using the following account credentials:</p>
+<table>
+<thead>
+<tr>
+<th>Use case</th>
+<th>Username</th>
+<th>Password</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Full Data</td>
+<td><code>bnk100</code></td>
+<td><code>full</code></td>
+<td>Paginated data, including transactions, owners, accounts, loans, credits, income, and statements.</td>
+</tr>
+<tr>
+<td>No Data</td>
+<td><code>bnk101</code></td>
+<td><code>nodata</code></td>
+<td>Link with no data.</td>
+</tr>
+<tr>
+<td>Low Data</td>
+<td><code>bnk102</code></td>
+<td><code>low</code></td>
+<td>Non-paginated data set.</td>
+</tr>
+<tr>
+<td>Negative Balance</td>
+<td><code>bnk103</code></td>
+<td><code>negative</code></td>
+<td>Non-paginated data set with negative values.</td>
+</tr>
+</tbody>
+</table>
+<details class="tip"><summary>Try it out</summary></details>
+<h3 id="fiscal">Fiscal</h3>
+<p>For fiscal use cases, you have access to the following institution:</p>
+<div class="tabbed-set" data-tabs="3:1"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><label for="__tabbed_3_1">Tatooine Fiscal</label><div class="tabbed-content">
+<ul>
+<li><code>tatooine_mx_fiscal</code> </li>
+</ul>
+</div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Use Case</th>
+<th>Username</th>
+<th>Password</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Full Data</td>
+<td><code>fiscal100</code></td>
+<td><code>full</code></td>
+<td>Full dataset of fiscal information, that includes paginated invoices (outflow and inflow), tax status, and tax returns.</td>
+</tr>
+<tr>
+<td>No Data</td>
+<td><code>fiscal101</code></td>
+<td><code>nodata</code></td>
+<td>Link with no data.</td>
+</tr>
+<tr>
+<td>Low Data</td>
+<td><code>fiscal102</code></td>
+<td><code>low</code></td>
+<td>Non-paginated data set.</td>
+</tr>
+</tbody>
+</table>
+<details class="tip"><summary>Try it out</summary></details>
+<h3 id="gig-economy">Gig Economy</h3>
+<p>For gig-economy use cases, you have access to the following institutions:</p>
+<div class="tabbed-set" data-tabs="4:2"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><label for="__tabbed_4_1">Goonies</label><div class="tabbed-content">
+<p>Goonies is a mock ride-sharing company.</p>
+<ul>
+<li><code>goonies_mx_retail</code></li>
+<li><code>goonies_co_retail</code></li>
+<li><code>goonies_br_retail</code></li>
+</ul>
+</div>
+<input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><label for="__tabbed_4_2">Planet Express</label><div class="tabbed-content">
+<p>Planet Express is a mock delivery company.</p>
+<ul>
+<li><code>planet_mx_retail</code></li>
+<li><code>planet_co_retail</code></li>
+<li><code>planet_br_retail</code></li>
+</ul>
+</div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Use case</th>
+<th>Username</th>
+<th>Password</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Full Data</td>
+<td><code>gig100</code></td>
+<td><code>full</code></td>
+<td>Complete paginated dataset that will cover our entire data schema (transactions, owners, accounts, loans, credits, income, statements).</td>
+</tr>
+<tr>
+<td>No Data</td>
+<td><code>gig101</code></td>
+<td><code>nodata</code></td>
+<td>A link that won't generate any kind of data.</td>
+</tr>
+<tr>
+<td>Low Data</td>
+<td><code>gig102</code></td>
+<td><code>low</code></td>
+<td>Non-paginated data set.</td>
+</tr>
+<tr>
+<td>Negative Balance</td>
+<td><code>gig103</code></td>
+<td><code>negative</code></td>
+<td>Same case than <em>low data</em> but with a negative balance.</td>
+</tr>
+</tbody>
+</table>
+<details class="tip"><summary>Try it out</summary></details>
+<h2 id="standard-flows">Standard Flows</h2>
+<p>When you want to test standard user login flows for an API or widget, you can use these credentials for any institution:</p>
+<table>
+<thead>
+<tr>
+<th>Case</th>
+<th>Username</th>
+<th>Password</th>
+<th>Response</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Valid credentials</td>
+<td><code>user_valid</code></td>
+<td><code>pass_valid</code></td>
+<td>200 Success</td>
+</tr>
+<tr>
+<td>Invalid credentials</td>
+<td><code>user_invalid</code></td>
+<td><code>pass_invalid</code></td>
+<td>400 Login Error</td>
+</tr>
+<tr>
+<td>Validation error</td>
+<td><code>1234567890abcdefg</code></td>
+<td><code>1234567890abcdefg</code></td>
+<td>400 Validation Error</td>
+</tr>
+</tbody>
+</table>
+<details class="tip"><summary>Try it out</summary></details>
+<div class="admonition error">
+<p class="admonition-title">400 Duplication Error</p>
+<p>If you create more than one <a href=""><code>link</code></a> for an institution using the same credentials, you'll receive a <strong>400 Duplication Error</strong>.
+To avoid this error, make sure you use unique <code>username</code> and <code>password</code> combinations.</p>
+</div>
+<h2 id="advanced-link-flows">Advanced Link Flows</h2>
+<p>When you want to test out advanced user login flows that require additional <code>username_type</code>, <code>username2</code>, or <code>password2</code> parameters, you can use the following institution and credentials:</p>
+<div class="tabbed-set" data-tabs="5:1"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><label for="__tabbed_5_1">Iron Bank</label><div class="tabbed-content">
+<ul>
+<li><code>ironbank_br_business</code></li>
+<li><code>ironbank_br_retail</code> </li>
+</ul>
+</div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Case</th>
+<th>Username</th>
+<th>Password</th>
+<th>Username type</th>
+<th>Username2</th>
+<th>Password2</th>
+<th>API Response</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Valid credentials</td>
+<td><code>adv_valid</code></td>
+<td><code>pass_valid</code></td>
+<td><code>003</code></td>
+<td><code>valid</code></td>
+<td><code>valid</code></td>
+<td>200 Success</td>
+</tr>
+<tr>
+<td>Invalid credentials</td>
+<td><code>adv_invalid</code></td>
+<td><code>pass_invalid</code></td>
+<td><code>999</code></td>
+<td><code>invalid</code></td>
+<td><code>invalid</code></td>
+<td>400 Login Error</td>
+</tr>
+</tbody>
+</table>
+<details class="tip"><summary>Try it out</summary></details>
+<h2 id="two-factor-authentication">Two-Factor Authentication</h2>
+<p>When you want to test out user login flows that require two-factor authentication (2FA), you can use the following institutions:</p>
+<div class="tabbed-set" data-tabs="6:2"><input checked="checked" id="__tabbed_6_1" name="__tabbed_6" type="radio" /><label for="__tabbed_6_1">Gotham Business Bank</label><div class="tabbed-content">
+<ul>
+<li><code>gotham_mx_retail</code></li>
+<li><code>gotham_co_retail</code></li>
+<li><code>gotham_br_retail</code></li>
+</ul>
+</div>
+<input id="__tabbed_6_2" name="__tabbed_6" type="radio" /><label for="__tabbed_6_2">Heimdall Bank </label><div class="tabbed-content">
+<ul>
+<li><code>heimdall_mx_retail</code></li>
+<li><code>heimdall_co_retail</code></li>
+<li><code>heimdall_br_retail</code></li>
+</ul>
+</div>
+</div>
+<p>Depending on the flow you want to simulate, use the appropriate username and password:</p>
+<table>
+<thead>
+<tr>
+<th>Simulate a flow where a user needs to:</th>
+<th>Username</th>
+<th>Password</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>generate 2FA using a mobile or other device.</td>
+<td><code>mfa_default</code></td>
+<td><code>pass_valid</code></td>
+</tr>
+<tr>
+<td>scan a QR code in order to generate the 2FA token.</td>
+<td><code>mfa_qr</code></td>
+<td><code>qr_code</code></td>
+</tr>
+<tr>
+<td>input a challenge code in order to generate the 2FA token.</td>
+<td><code>mfa_numeric</code></td>
+<td><code>numeric_code</code></td>
+</tr>
+</tbody>
+</table>
+<p>After you use one of these credentials, you'll receive a 428 HTTP response. You'll need to <strong>PATCH</strong> the link with one of the following tokens to finish creating the link.</p>
+<table>
+<thead>
+<tr>
+<th>Case</th>
+<th>Value</th>
+<th>API Response</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Valid token</td>
+<td><code>111111</code></td>
+<td>201 Created</td>
+</tr>
+<tr>
+<td>Invalid token</td>
+<td><code>999999</code></td>
+<td>428 Token Required</td>
+</tr>
+</tbody>
+</table>
+<details class="tip"><summary>Try it out</summary></details>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>In the case where you use an invalid token, we simulate the scenario where the user enters a wrong token. As a result, you'll receive a new 428 response, asking again for a new token.</p>
+</div>
+<p><strong>How useful was this article?</strong></p>
+<p><a class="md-button md-button--primary" href="#">⭐️</a> <a class="md-button md-button--primary" href="#">⭐️⭐️</a> <a class="md-button md-button--primary" href="#">⭐️⭐️⭐️</a></p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../build-intro/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Overview
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../build-banking/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Banking App
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/vendor.0ac82a11.min.js"></script>
+      <script src="../../assets/javascripts/bundle.f81dfb4d.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+      <script>
+        app = initialize({
+          base: "../..",
+          features: [],
+          search: Object.assign({
+            worker: "../../assets/javascripts/worker/search.4ac00218.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js"></script>
+      
+        <script src="../../javascripts/tables.js"></script>
+      
+    
+  </body>
+</html>
